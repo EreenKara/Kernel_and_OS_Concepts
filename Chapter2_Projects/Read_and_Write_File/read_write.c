@@ -23,6 +23,18 @@ int main(int argc, char** argv){
 	
 
 
+	// ISTERSEN dosya boyutu kadar bir buffer'a da okuma gerçeklestirebilirsin.
+	/*
+
+		Get size.
+	off_t size = lseek(fd, 0, SEEK_END); // You should check for an error return in real code
+		Seek back to the beginning.
+	lseek(fd, 0, SEEK_SET);
+		Allocate enough to hold the whole contents plus a '\0' char.
+	char *buff = malloc(size + 1);
+	*/
+
+
 
 	if(argc<3){
 		fprintf(stderr,"Dosya yolunu girmediniz."); // Dosya yolu girilmediginde fprintf ile hatayi gostermemiz gerek.
