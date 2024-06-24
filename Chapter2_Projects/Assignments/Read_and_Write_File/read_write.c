@@ -40,7 +40,7 @@ int main(int argc, char** argv){
 		fprintf(stderr,"Dosya yolunu girmediniz."); // Dosya yolu girilmediginde fprintf ile hatayi gostermemiz gerek.
 		// perror sistem bir error urettiginde yani sistemde onceden tanimli
 		// bir hata uretildigi takdirde hata'nin ne oldugunu ogrenmek icin kullanıyoruz.
-		// Bu yuzden burda perror kullanmamiz gerekir.
+		// Bu yuzden burda perror kullanmamamiz gerekir.
 		// perror("Dosyayi girmediniz")
 		exit(1);
 	}
