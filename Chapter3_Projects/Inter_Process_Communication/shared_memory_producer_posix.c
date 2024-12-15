@@ -21,8 +21,8 @@
 #include <fcntl.h> // open() flaglarini iceriyor
 
 #include <sys/shm.h>
-#include <sys/stat.h>
-#include <sys/mman.h>
+#include <sys/stat.h> // mode constants 
+#include <sys/mman.h> // asil shm_open flena burda bulunuyor.
 #include <sys/types.h>
 
 int main()

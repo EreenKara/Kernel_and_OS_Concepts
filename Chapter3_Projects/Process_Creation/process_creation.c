@@ -1,6 +1,6 @@
 #include <sys/types.h>
 #include <stdio.h>
-#include <unistd.h>
+#include <unistd.h>  // fork() ve pid_t bu header'da
 
 int main(){
     pid_t pid; // integer bir sayi ile de tutulabilir. ancak process_id_type olarak bu kullaniliyor.
